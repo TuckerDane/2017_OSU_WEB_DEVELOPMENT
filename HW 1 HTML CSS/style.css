@@ -1,0 +1,56 @@
+﻿table {
+	border-style: solid;
+	border-color:black;
+}
+
+table thead {
+	border-style: solid;
+	border-color: black;
+	color: white;
+	background-color:black;
+}
+
+table tfoot {
+	background-color: black;
+	color: white;
+}
+
+td {
+	border-style:solid;
+	border-color:black;
+}
+
+tbody tr th {
+	font-weight: normal;
+	font-style: italic;
+	background-color: black;
+	color: white;
+}
+
+tbody tr:nth-of-type(odd) {
+	color: lightblue;
+	background-color: darkblue;
+}
+
+tbody tr:nth-of-type(even) {
+	color: darkblue;
+	background-color: lightblue;
+}
+
+#outer-content {
+	background-color: pink;
+	top: 20px;
+	width: 75%;
+	height: 20px;
+}
+
+#inner-content {
+	background-color:blue;
+	position: relative;
+	width: 75%;
+	height: 10px;
+	top: 50%;
+	transform: translate(0, -50%);
+	margin-left: auto;
+	margin-right: auto;
+}
