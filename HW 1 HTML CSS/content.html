@@ -22,96 +22,52 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8" />
-	<title>Storm Trooper Life | Index</title>
+	<title>CS 290: Web Development | HTML/CSS</title>
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-	<link id="favicon" rel="shortcut icon" href="images/favicon-32.png" sizes="16x16 32x32 48x48" type="image/png" />
+	<link id="favicon" rel="shortcut icon" href="../favicon-32.png" sizes="16x16 32x32 48x48" type="image/png" />
 </head>
 <body>
 	<h1>HW Assignment: HTML/CSS</h1>
 	<section>
 		<h2>1. Table</h2>
-		<h3>Create a 6x6 table (inclusive of the header row) and fill in the table with your own contents.</h3>
+		<p>Create a 6x6 table (inclusive of the header row) and fill in the table with your own contents.</p>
 		<table>
 			<caption>My Table of Letters</caption>
 			<thead>
 				<tr>
 					<th style="background-color:white;"></th>
-					<th>1</th>
-					<th>2</th>
-					<th>3</th>
-					<th>4</th>
-					<th>5</th>
-					<th>6</th>
+				<!--					COL1		COL2		COL3		COL4		COL5			   -->
+									<th>1</th>	<th>2</th>	<th>3</th>	<th>4</th>	<th>5</th>	<!-- ROW 0 -->
 				</tr>
 			</thead>
 			<tfoot>
 				<tr>
-					<th style="background-color:white;"></th>
-					<td colspan="2">stuff</td>
-					<td colspan="4">stuff</td>
+					<td colspan="2">Foot1</td>
+					<td colspan="4">Foot2</td>
 				</tr>
 			</tfoot>
 			<tbody>
-				<tr>
-					<th>A</th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
+				<tr> <!--   COL0		COL1		COL2		COL3		COL4		COL5			   -->
+						<th>A</th>	<td>A1</td>	<td>A2</td>	<td>A3</td>	<td>A4</td>	<td>A5</td>	<!-- ROW 1 -->
 				</tr>
 				<tr>
-					<th>B</th>
-					<td>B1</td>
-					<td>B2</td>
-					<td>B3</td>
-					<td>B4</td>
-					<td>B5</td>
-					<td>B6</td>
+						<th>B</th>	<td>B1</td>	<td>B2</td>	<td>B3</td>	<td>B4</td>	<td>B5</td>	<!-- ROW 2 -->
 				</tr>
 				<tr>
-					<th>C</th>
-					<td>C1</td>
-					<td>C2</td>
-					<td>C3</td>
-					<td>C4</td>
-					<td>C5</td>
-					<td>C6</td>
+						<th>C</th>	<td>C1</td>	<td>C2</td>	<td>C3</td>	<td>C4</td>	<td>C5</td>	<!-- ROW 3 -->
 				</tr>
 				<tr>
-					<th>D</th>
-					<td>D1</td>
-					<td>D2</td>
-					<td>D3</td>
-					<td>D4</td>
-					<td>D5</td>
-					<td>D6</td>
+						<th>D</th>	<td>D1</td>	<td>D2</td>	<td>D3</td>	<td>D4</td>	<td>D5</td> <!-- ROW 4 -->
 				</tr>
 				<tr>
-					<th>E</th>
-					<td>E1</td>
-					<td>E2</td>
-					<td>E3</td>
-					<td>E4</td>
-					<td>E5</td>
-					<td>E6</td>
-				</tr>
-				<tr>
-					<th>F</th>
-					<td>F1</td>
-					<td>F2</td>
-					<td>F3</td>
-					<td>F4</td>
-					<td>F5</td>
-					<td>F6</td>
+						<th>E</th>	<td>E1</td>	<td>E2</td>	<td>E3</td>	<td>E4</td>	<td>E5</td> <!-- ROW 5 -->
 				</tr>
 			</tbody>
 		</table>
 	</section>
 	<section>
 		<h2>2. List</h2>
-		<h3>Create a list (ul, ol or dl) with at least 3 entries.</h3>
+		<p>Create a list (ul, ol or dl) with at least 3 entries.</p>
 		<ul>
 			<li>Entry 1</li>
 			<li>Entry 2</li>
@@ -120,14 +76,69 @@
 	</section>
 	<section>
 		<h2>3. Inner / Outer Div</h2>
-		<h3>Create a div that is aligned to the left side of the page and takes up 3/4 of the page width, has a space of 20px between it and the previous element and has a class of 'outer-content'.</h3>
+		<p>Create a div that is aligned to the left side of the page and takes up 3/4 of the page width, has a space of 20px between it and the previous element and has a class of 'outer-content'.</p>
 		<div id="outer-content">
 			<div id="inner-content"></div>
 		</div>
 	</section>
 	<section>
 		<h2>4. Forms</h2>
-		<h3>Create two forms. One should submit via a post, the other via a get, they should have identical content.</h3>
+		<p>Create two forms. One should submit via a post, the other via a get, they should have identical content.</p>
+		<h3>Get Form</h3>
+			<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+				<fieldset>
+					<legend>Get Form:</legend>
+					<p><label>Input Text Here: <input type="text" name="text_input" size="25" maxlength="100" /></label> </p>
+					<p><label>Input Number Here: <input type="number" name="numerical_input" size="25" /></label> </p>
+					<p><label>Input Password Here: <input type="password" name="password_input" size="25" /></label> </p>
+					<p>Candy:
+					<br/>
+						<label>
+							<input type="radio" name="candy" value="snickers" />Snickers
+						</label>
+						<br/>
+						<label>
+							<input type="radio" name="candy" value="skittles" />Skittles
+						</label>
+						<br />	
+						<label>
+							<input type="radio" name="candy" value="mentos" />Mentos
+						</label>
+						<br />
+						<label>
+							<input type="button" name="CandyButton" value="Submit"/>
+						</label>
+					</p>
+				</fieldset>
+			</form>
+		<h3>Post Form</h3>
+		<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+			<fieldset>
+				<legend>Get Form:</legend>
+				<p><label>Input Text Here: <input type="text" name="text_input" size="25" maxlength="100" /></label> </p>
+				<p><label>Input Number Here: <input type="number" name="numerical_input" size="25" /></label> </p>
+				<p><label>Input Password Here: <input type="password" name="password_input" size="25" /></label> </p>
+				<p>
+					Candy:
+					<br />
+					<label>
+						<input type="radio" name="candy" value="snickers" />Snickers
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="candy" value="skittles" />Skittles
+					</label>
+					<br />
+					<label>
+						<input type="radio" name="candy" value="mentos" />Mentos
+					</label>
+					<br />
+					<label>
+						<input type="button" name="CandyButton" value="Submit" />
+					</label>
+				</p>
+			</fieldset>
+		</form>
 	</section>
 </body>
 </html>

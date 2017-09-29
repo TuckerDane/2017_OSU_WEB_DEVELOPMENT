@@ -3,6 +3,11 @@
 	border-color:black;
 }
 
+fieldset p {
+	border-style:solid;
+	border-color:gray;
+}
+
 table thead {
 	border-style: solid;
 	border-color: black;
