@@ -1,0 +1,47 @@
+<div>
+	<h1>MySQL Results:</h1>
+	<br>
+	<table class="table table-light">
+		<thead class="thead-inverse">
+			<tr>
+				<th scope="col">ID</th>
+				<th scope="col">NAME</th>
+				<th scope="col">REPS</th>
+				<th scope="col">WEIGHT</th>
+				<th scope="col">DATE</th>
+				<th scope="col">LBS</th>
+				<th scope="col">DELETE</th>
+				<th scope="col">UPDATE</th>
+			</tr>
+		</thead>
+		{{#each results}}
+		<tr>
+			<td scope="row">{{this.id}}</td>
+			<td>{{this.name}}</td>
+			<td>{{this.reps}}</td>
+			<td>{{this.weight}}</td>
+			<td>{{this.date}}</td>
+			<td>{{this.lbs}}</td>
+			<td>
+				<form action="/delete">
+					<input type="hidden" name="id" id="{{this.id}}" value="{{this.id}}">
+					<button class="btn btn-danger">Delete</button>
+				</form>
+			</td>
+			<td><button class="btn btn-primary">Update</button></td>
+		</tr>
+		{{/each}}
+		<tr>
+			<form action="/insert">
+				<td></td>
+		        <td><input type="text" name="name" id="name"></td>
+		        <td><input type="text" name="reps" id="reps"></td>
+		        <td><input type="text" name="weight" id="weight"></td>
+		        <td><input type="text" name="date" id="date"></td>
+		        <td><input type="text" name="lbs" id="lbs"></td>
+		        <td><input class="btn btn-success" type="submit" id="itemSubmit" value="Add"></td>
+		        <td></td>
+		    </form>
+		</tr>
+	</table>
+</div>
